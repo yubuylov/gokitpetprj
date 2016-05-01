@@ -1,24 +1,23 @@
 # gokitpetprj
 
-public-api - public json-api with business logic
-storage - internal json-api to access data
+public-api - public json-api with business logic.
+
+storage - internal json-api to access data.
 
 ##Usage:
-You need run both services.
-1) run storage:
+1) You need **run both** services.
 ```
 cd ./storage; go build && ./storage
 ```
-2) run public-api (different tab):
 ```
 cd ./public-api; go build && ./public-api
 ```
 
-Send POST request to public-api:
+Send POST request to **public-api**:
 ```
 curl -X POST -d '{"nid":2, "uid":1, "cvc":"26e163ffa259c3e1ece3c39d21e3d246"}' http://localhost:8001/entities
 ```
-Will be sended some requests to storage in parallel..
+> Will be sended some requests to storage in parallel..
 
 
 ##Try storage:
