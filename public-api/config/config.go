@@ -11,7 +11,7 @@ type AppConfig struct {
 	Server struct {
 		       Listen string `default:":8001"`
 		       CvcKey string `default:":12345"`
-		       Qps    int64  `default:"1000"`
+		       Qps    int64  `default:"1"`
 	       }
 	Relations  struct {
 		       Storage       string `default:"localhost:36701"`
