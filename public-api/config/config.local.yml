@@ -1,0 +1,8 @@
+---
+server:
+  listen: :8001
+
+relations:
+  storage: localhost:36701
+  microservicea: localhost:36801
+  microservicez: localhost:36808

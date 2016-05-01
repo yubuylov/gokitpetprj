@@ -32,14 +32,13 @@ func (s *service) GetNodeEntity(nid NodeId, id EntityId) (Entity, error) {
 		return m, errors.New("Bad node relation..")
 	}
 
-	time.Sleep(1 * time.Millisecond)
-
+	time.Sleep(2 * time.Millisecond)
 	return m, nil
 }
 
 func (s *service) GetNodeEntities(nid NodeId) (list []Entity, err error) {
 	// storage.find_all entities by NodeId
-	time.Sleep(2 * time.Millisecond)
+	time.Sleep(10 * time.Millisecond)
 	list = []Entity{{1,1,"asdf payload"},{2,1,"asdf payload"}}
 	return
 }
@@ -47,7 +46,7 @@ func (s *service) GetNodeEntities(nid NodeId) (list []Entity, err error) {
 func (s *service) GetNodeEntitiesCount(nid NodeId) (cnt int64, err error) {
 	// storage.count entities by NodeId
 	// use in-memory cache if u need
-	time.Sleep(3 * time.Millisecond)
+	time.Sleep(5 * time.Millisecond)
 	cnt = 2
 	return
 }
