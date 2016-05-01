@@ -1,8 +1,11 @@
 # gokitpetprj
+This is an example of simple project based on **go-kit toolkit**.
+It has a two components related over httpjson transport.
+> **Note:** It's not proper way to keep a both instances connected!
 
-public-api - public json-api with business logic.
 
-storage - internal json-api to access data.
+**public-api** - public json-api with business logic.
+**storage** - internal json-api to access data.
 
 ##Usage:
 1) You need **run both** services.
