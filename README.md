@@ -35,8 +35,12 @@ $ curl http://localhost:36701/api/v1/1/entities/count
 {"count":2}
 ```
 
-View metrics:
+##View metrics:
 ```
+# public-api metrics
+$ curl http://localhost:8001/debug/vars
+
+# storage metrics
 $ curl http://localhost:36701/debug/vars
 {
 "access_GetNodeEntities": 1,
