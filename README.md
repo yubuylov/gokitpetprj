@@ -18,7 +18,7 @@ Send POST request to **public-api**:
 ```
 curl -X POST -d '{"nid":2, "uid":1, "cvc":"26e163ffa259c3e1ece3c39d21e3d246"}' http://localhost:8001/entities
 ```
-> Will be sended some requests to storage in parallel..
+> Will be sended some requests to storage in concurrency..
 
 
 ##Try storage:
